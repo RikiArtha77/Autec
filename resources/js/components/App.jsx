@@ -24,6 +24,9 @@ const App = () => {
           <NavLink to="/device" className={({ isActive }) => `hover:text-gray-300 ${isActive ? 'font-bold' : ''}`}>
             Devices
           </NavLink>
+          <NavLink to="/sensors" className={({ isActive }) => `hover:text-gray-300 ${isActive ? 'font-bold' : ''}`}>
+            SensorData
+          </NavLink>
         </div>
 
         <button
