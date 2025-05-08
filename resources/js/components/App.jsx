@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import HomePage from './HomePage';
-import DevicePage from './DevicePage'; // Pastikan file ini ada
+import DevicePage from './DevicePage';
+import SensorData from './SensorData'; // Pastikan file ini ada
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -42,6 +43,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/device" element={<DevicePage />} />
+          <Route path="/sensors" element={<SensorData />} />
         </Routes>
       </main>
 
